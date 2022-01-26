@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.6.0.min.js"></script>
+    <title>驗證</title>
+</head>
+<body>
+    <input type="button" value="" class="xxx">
+    <input type="button" value="" class="xxx">
+    <input type="button" value="" class="xxx">
+    <input type="button" value="修改" class="www">
+</body>
+</html>
+<script>
+    var v=["x","y","z"]
+    v.sort(function(){
+        return Math.random()>0.5?1:-1;
+    });
+    $(".xxx:eq(0)").val(v[0]);
+    $(".xxx:eq(1)").val(v[1]);
+    $(".xxx:eq(2)").val(v[2]);
+    $(".www").click(function(){
+        v.sort(function(){
+            return Math.random()>0.5?1:-1;
+        });
+        $(".xxx:eq(0)").val(v[0]);
+        $(".xxx:eq(1)").val(v[1]);
+        $(".xxx:eq(2)").val(v[2]);
+    });
+    $(".xxx").click(function(){
+        if($(this).val()=="x") $(this).val("y");
+        else if($(this).val()=="y") $(this).val("z");
+        else if($(this).val()=="z") $(this).val("x");
+        if($(".xxx:eq(0)").val()==$(".xxx:eq(1)").val()&&$(".xxx:eq(1)").val()==$(".xxx:eq(2)").val()){
+            window.location.href = "manage.php";
+        }
+    });
+</script>

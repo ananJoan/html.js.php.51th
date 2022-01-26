@@ -1,0 +1,2 @@
+15,15,xlvmtefu,xlvmtefu,6,6,ECGOLVY,ECGOLVY,T,T,,,,,,,,,,,0,0,t1,t1,是非題,是非題
+16,16,xlvmtefu,xlvmtefu,6,6,XOBUWKM,XOBUWKM,F,F,,,,,,,,,,,0,0,t1,t1,是非題,是非題
