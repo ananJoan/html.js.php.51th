@@ -21,9 +21,6 @@
 </body>
 </html>
 <script>
-    var tf=0;
-    var one=0;
-    var more=0;
     $.ajax({
         url:"chart1.php",
         success:function(e){
