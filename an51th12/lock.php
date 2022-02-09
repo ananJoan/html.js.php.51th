@@ -4,5 +4,5 @@
     mysqli_query($db,"SET NAMES UTF8");
     $id=$_GET["id"];
     mysqli_query($db,"UPDATE `ask` SET `locks`='t' WHERE `id` LIKE '$id'");
-    header("location:manage.php")
+    header("location:manage.php");
 ?>
