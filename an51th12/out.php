@@ -5,7 +5,7 @@
     $id=$_GET["id"];
     $row=mysqli_query($db,"SELECT * FROM `responsed` WHERE `askid` LIKE '$id'");
     $eee=date("Y-m-d-H-i-s");
- $fp = fopen("www.txt", "w");
+ $fp = fopen("www.csv", "w");
 while($arr=mysqli_fetch_array($row)){
      fputcsv($fp, $arr);
 }
