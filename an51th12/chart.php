@@ -13,8 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script src="jquery-3.6.0.min.js"></script>
     <title>圖表</title>
-    <style>
-    </style>
 </head>
 <body>
     <div style="width: 500px; height: 500px;">
